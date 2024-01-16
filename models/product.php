@@ -15,10 +15,6 @@ class Product
         $this->category = $_category;
         $this->is_available = $_is_available;
     }
-
-    public function getProductDetails()
-    {
-    }
 }
 
 /* classe specifica per cani */
