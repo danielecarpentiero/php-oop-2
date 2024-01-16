@@ -1,6 +1,8 @@
 <?php
+/* implementazioni */
 require_once 'models/product.php';
 require_once 'database/items.php';
+/* /implementazioni */
 
 ?>
 
@@ -11,12 +13,15 @@ require_once 'database/items.php';
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PHP OOP 2</title>
+  <!-- bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <!-- /bootstrap -->
 </head>
 
 <body>
   <div class="container">
     <h2>Dettagli prodotti:</h2>
+    <!-- iterazione prodotti standard -->
     <?php foreach ($result as $productData) : ?>
       <?php
       $product = new Product(
@@ -25,6 +30,8 @@ require_once 'database/items.php';
         $productData['category'],
         $productData['is_available']
       );
+      /* /iterazione prodotti standard */
+      /* iterazione prodotti personalizzati */
 
       if (isset($productData['is_for_dogs'])) {
         $product->is_for_dogs = $productData['is_for_dogs'];
@@ -50,7 +57,8 @@ require_once 'database/items.php';
         $product->size = $productData['size'];
       }
       ?>
-
+      <!-- /iterazione prodotti personalizzati -->
+      <!-- rappresentazione in pagina -->
       <div class="card">
         <div class="card-body">
           <h5 class="card-title"><?= $product->name ?></h5>
@@ -85,6 +93,7 @@ require_once 'database/items.php';
       </div>
     <?php endforeach; ?>
   </div>
+  <!-- /rappresentazione in pagina -->
 </body>
 
 </html>
