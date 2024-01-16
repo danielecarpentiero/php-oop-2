@@ -1,0 +1,54 @@
+[
+  {
+    "name": "Croccantini per cani premium",
+    "price": 25.99,
+    "category": "Cibo",
+    "is_available": true,
+    "is_for_dogs": true,
+    "calories": 350
+  },
+  {
+    "name": "Croccantini per gatti speciali",
+    "price": 12.49,
+    "category": "Cibo",
+    "is_available": true,
+    "is_for_cats": true,
+    "calories": 250
+  },
+  {
+    "name": "Pallina da gioco per gatti",
+    "price": 8.99,
+    "category": "Gioco",
+    "is_available": true,
+    "is_for_cats": true,
+    "type": "Pallina",
+    "material": "Gomma"
+  },
+  {
+    "name": "Osso da masticare per cani",
+    "price": 15.99,
+    "category": "Gioco",
+    "is_available": true,
+    "is_for_dogs": true,
+    "type": "Osso",
+    "material": "Nylon"
+  },
+  {
+    "name": "Cuccia per cani XL",
+    "price": 75.99,
+    "category": "Cuccia",
+    "is_available": true,
+    "size": "Extra Large",
+    "material": "Panno resistente",
+    "is_for_dogs": true
+  },
+  {
+    "name": "Casetta per gatti",
+    "price": 42.49,
+    "category": "Cuccia",
+    "is_available": true,
+    "size": "Media",
+    "material": "Legno",
+    "is_for_cats": true
+  }
+]
